@@ -1,0 +1,3 @@
+# ignore main.js test files
+*main.js
+*/node_modules
