@@ -1,6 +1,5 @@
 export default class Currency {
   constructor(code, name) {
-	if (typof 
     this._code = code;
     this._name = name;
   }
@@ -10,7 +9,7 @@ export default class Currency {
   }
 
   get code() {
-    return this._code = code;
+    return this._code;
   }
 
   set name(name) {
