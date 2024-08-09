@@ -1,22 +1,21 @@
-export default class Building {
-  constructor(sqrt) {
-    this._sqrt = sqrt;
-    setTimeout(() => {
-      if (super.evacuationWarningMessage && this.evacuationWarningMessage === super.prototype['evacuationWarningMessage']) {
-        throw new Error('Class extending Building must override evacuationWarningMessage');
-      }
-    }, 0);
+class Building {
+  constructor(sqft) {
+    this._sqft = sqft;
+    if (new.target !== Building && this.evacuationWarningMessage === Building.prototype.evacuationWarningMessage) {
+      throw new Error('Class extending Building must override evacuationWarningMessage');
+    }
   }
 
-  get sqrt() {
-    return this_sqrt;
+  get sqft() {
+    return this._sqft;
   }
 
-  set sqrt(sqrt) {
-    this._sqrt = sqrt;
+  set sqft(sqft) {
+    this._sqft = sqft;
   }
 
   evacuationWarningMessage() {
     console.log('evacuate');
   }
 }
+export default Building
