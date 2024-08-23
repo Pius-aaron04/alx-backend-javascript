@@ -29,7 +29,7 @@ function countStudents(filePath) {
 
         // Log Fields stats
         for (const [field, names] of Object.entries(fieldCounts)) {
-          console.log(`Numbers of students in ${field}: ${names.length}. List: ${names.join(', ')}`);
+          console.log(`Number of students in ${field}: ${names.length}. List: ${names.join(', ')}`);
         }
 
         // Resolve promise
