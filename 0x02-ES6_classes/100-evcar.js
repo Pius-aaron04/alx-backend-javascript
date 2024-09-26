@@ -1,4 +1,5 @@
 import Car from './10-car';
+/* eslint-disable class-methods-use-this */
 
 // 100-evcar.js
 
