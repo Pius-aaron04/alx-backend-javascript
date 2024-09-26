@@ -4,11 +4,13 @@ class HolbertonClass {
     this._location = location;
   }
 
+  // returns location attribute when instance is cast to String
   toString() {
     return (this._location);
   }
 
-  toNumber() {
+  // return size attribute when instance is cast to Number
+  valueOf() {
     return (this._size);
   }
 }
